@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Garima Yadav | Statistics, Data Analytics and Data Visualization">
-<title>Garima Yadav | Portfolio</title>
+<meta name="description" content="Garima Yadav | M.Sc. Statistics | Data Analytics, Python, SQL, Advanced Excel and Machine Learning">
+<title>Garima Yadav | Data Analytics Portfolio</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +59,7 @@ header {
 }
 
 nav {
-    height: 82px;
+    min-height: 82px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,7 +94,7 @@ nav {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 27px;
+    gap: 23px;
     list-style: none;
 }
 
@@ -270,7 +269,7 @@ nav {
 
 section:not(.hero) {
     padding: 85px 0;
-    scroll-margin-top: 75px;
+    scroll-margin-top: 85px;
 }
 
 .section-label {
@@ -483,10 +482,77 @@ section:not(.hero) {
     font-weight: 600;
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* CERTIFICATIONS */
+
+.certifications {
+    background: white;
+}
+
+.certification-card {
+    max-width: 850px;
+    background: var(--bg);
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: 0.25s;
+}
+
+.certification-card:hover {
+    border-color: #bfdbfe;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.04);
+}
+
+.certification-card h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--navy);
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.certification-card .role {
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.certification-card p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+
+.certification-card .cert-heading {
+    color: var(--navy);
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.certification-card .project-tools {
+    margin: 18px 0;
+}
+
+.credential {
+    font-size: 12px !important;
+    overflow-wrap: anywhere;
+}
+
 /* EDUCATION */
 
 .education {
-    background: white;
+    background: var(--bg);
 }
 
 .education-list {
@@ -654,6 +720,10 @@ footer {
     .section-title {
         font-size: 28px;
     }
+
+    .certification-card {
+        padding: 22px;
+    }
 }
 
 @media(max-width: 400px) {
@@ -682,6 +752,7 @@ footer {
     <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#contact" class="nav-button">Contact</a></li>
 </ul>
@@ -712,10 +783,10 @@ footer {
 
 <p class="hero-description">
     With a background in Mathematics and Statistics, I enjoy
-    exploring data, identifying patterns and turning complex
-    information into meaningful insights. I am building my
-    skills in data analytics through practical projects and
-    continuous learning.
+    exploring data, identifying patterns and transforming
+    complex information into meaningful insights. I work
+    with Python, SQL and Advanced Excel to analyse data,
+    solve problems and communicate findings effectively.
 </p>
 
 <div class="hero-buttons">
@@ -724,8 +795,8 @@ footer {
 </div>
 
 <div class="social-links">
-    <a href="https://github.com/garimaworkspace" target="_blank">GitHub ↗</a>
-    <a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a>
+    <a href="https://github.com/garimaworkspace" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
 </div>
 
 </div>
@@ -766,15 +837,18 @@ footer {
 
     <p>
         I am particularly interested in data analytics,
-        statistical modelling and data visualization.
-        I enjoy working with datasets, understanding the
-        story behind numbers and communicating findings
-        in a clear and structured way.
+        statistical modelling, machine learning and data
+        visualization. I enjoy working with datasets,
+        understanding the story behind numbers and
+        communicating findings in a clear and structured way.
     </p>
 
     <p>
-        Currently, I am strengthening my technical skills
-        through independent projects and hands-on practice.
+        I have applied these skills through independent
+        projects involving fraud detection, e-commerce
+        analytics and electric vehicle charging infrastructure.
+        I continue to strengthen my technical skills through
+        practical projects and professional learning.
     </p>
 </div>
 
@@ -782,9 +856,10 @@ footer {
     <h3>Areas of Interest</h3>
     <p>✦ Data Analytics</p>
     <p>✦ Statistical Analysis</p>
-    <p>✦ Data Visualization</p>
+    <p>✦ Machine Learning</p>
     <p>✦ Predictive Modelling</p>
     <p>✦ Business Intelligence</p>
+    <p>✦ Data Visualization</p>
 </div>
 
 </div>
@@ -839,17 +914,27 @@ footer {
 <h2 class="section-title">Skills & Technologies</h2>
 
 <p class="section-description">
-    Tools and concepts I am developing and applying
-    through academic and independent work.
+    Technical tools and analytical concepts applied
+    through my academic and independent projects.
 </p>
 
 <div class="skills-grid">
 
 <div class="skill-card">
-    <h3>Programming</h3>
+    <h3>Programming & Querying</h3>
     <div class="tags">
         <span>Python</span>
-        <span>SQL (Learning)</span>
+        <span>SQL</span>
+        <span>MySQL</span>
+    </div>
+</div>
+
+<div class="skill-card">
+    <h3>Python Libraries</h3>
+    <div class="tags">
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Scikit-learn</span>
     </div>
 </div>
 
@@ -857,30 +942,23 @@ footer {
     <h3>Data Tools</h3>
     <div class="tags">
         <span>Microsoft Excel</span>
+        <span>Advanced Excel</span>
         <span>Power BI (Learning)</span>
     </div>
 </div>
 
 <div class="skill-card">
-    <h3>Statistics</h3>
+    <h3>Statistics & Analytics</h3>
     <div class="tags">
-        <span>Probability</span>
         <span>Statistical Analysis</span>
-        <span>Regression</span>
-    </div>
-</div>
-
-<div class="skill-card">
-    <h3>Data Analytics</h3>
-    <div class="tags">
-        <span>Data Cleaning</span>
         <span>EDA</span>
-        <span>Data Interpretation</span>
+        <span>Regression</span>
+        <span>Probability</span>
     </div>
 </div>
 
 <div class="skill-card">
-    <h3>Visualization</h3>
+    <h3>Data Visualization</h3>
     <div class="tags">
         <span>Excel Charts</span>
         <span>Dashboards</span>
@@ -891,8 +969,9 @@ footer {
 <div class="skill-card">
     <h3>Core Skills</h3>
     <div class="tags">
-        <span>Problem Solving</span>
         <span>Analytical Thinking</span>
+        <span>Problem Solving</span>
+        <span>Research</span>
         <span>Communication</span>
     </div>
 </div>
@@ -910,72 +989,196 @@ footer {
 <h2 class="section-title">Projects</h2>
 
 <p class="section-description">
-    Academic and independent projects where I apply
-    analytical concepts to real-world datasets.
+    Independent projects applying data analytics,
+    statistical methods and technical tools to
+    business-oriented datasets.
 </p>
 
 <div class="project-grid">
 
+<!-- PROJECT 1 -->
+
 <div class="project-card">
-    <p class="project-number">01 / ACADEMIC PROJECT</p>
-    <h3>Fraud Detection Analysis</h3>
+
+    <p class="project-number">01 / PYTHON & MACHINE LEARNING</p>
+
+    <h3>Financial Fraud Detection</h3>
+
     <p>
-        An academic project exploring transaction patterns
-        and applying analytical and machine learning
-        techniques to identify potentially fraudulent
-        activities.
+        Analysed financial transaction data to explore
+        patterns associated with fraudulent activities.
+        Performed exploratory data analysis, data
+        preprocessing and machine learning modelling
+        to identify potentially fraudulent transactions.
     </p>
+
     <div class="project-tools">
         <span>Python</span>
-        <span>Statistics</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>EDA</span>
         <span>Machine Learning</span>
     </div>
+
+    <a href="https://github.com/garimaworkspace"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="project-link">
+        Explore GitHub Profile ↗
+    </a>
+
 </div>
 
-<div class="project-card">
-    <p class="project-number">02 / ACADEMIC PROJECT</p>
-    <h3>Health Insurance Premium Prediction</h3>
-    <p>
-        Analysed factors associated with health insurance
-        premiums and explored predictive modelling
-        techniques to understand variations in insurance costs.
-    </p>
-    <div class="project-tools">
-        <span>Python</span>
-        <span>Regression</span>
-        <span>Statistical Modelling</span>
-    </div>
-</div>
+<!-- PROJECT 2 -->
 
 <div class="project-card">
-    <p class="project-number">03 / INDEPENDENT PROJECT</p>
-    <h3>Myntra Retail Data Analysis</h3>
+
+    <p class="project-number">02 / ADVANCED EXCEL</p>
+
+    <h3>Tata Power – EV Charging Analysis</h3>
+
     <p>
-        An Excel-based retail analysis project involving
-        data cleaning, product pricing, discount analysis,
-        ratings and product availability.
+        Conducted an Excel-based analysis of electric
+        vehicle charging infrastructure data. Worked
+        with data preparation, spreadsheet analysis
+        and dashboard-based reporting to explore
+        charging infrastructure trends and key metrics.
     </p>
+
     <div class="project-tools">
-        <span>Excel</span>
+        <span>Advanced Excel</span>
         <span>Data Cleaning</span>
         <span>Data Analysis</span>
+        <span>Dashboard Reporting</span>
     </div>
+
+    <a href="https://github.com/garimaworkspace"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="project-link">
+        Explore GitHub Profile ↗
+    </a>
+
 </div>
 
+<!-- PROJECT 3 -->
+
 <div class="project-card">
-    <p class="project-number">04 / INDEPENDENT PROJECT</p>
-    <h3>EV Charging Infrastructure Analysis</h3>
+
+    <p class="project-number">03 / SQL & E-COMMERCE ANALYTICS</p>
+
+    <h3>Amazon Brazil – E-Commerce Analytics</h3>
+
     <p>
-        An ongoing analytics project exploring electric
-        vehicle charging infrastructure through data
-        preparation, KPI analysis and dashboard development.
+        Analysed the public Olist Brazilian E-Commerce
+        dataset through an Amazon Brazil-style business
+        case study. Developed SQL queries to investigate
+        sales performance, customer behaviour, product
+        categories, payment patterns and delivery trends.
     </p>
+
     <div class="project-tools">
-        <span>Excel</span>
-        <span>KPIs</span>
-        <span>Dashboards</span>
+        <span>MySQL</span>
+        <span>SQL Joins</span>
+        <span>CTEs</span>
+        <span>Subqueries</span>
+        <span>Window Functions</span>
+        <span>Business Analysis</span>
     </div>
+
+    <a href="https://github.com/garimaworkspace/Amazon-Brazil-Ecommerce-Analytics"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="project-link">
+        View Project on GitHub ↗
+    </a>
+
 </div>
+
+</div>
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section class="certifications" id="certifications">
+<div class="container">
+
+<p class="section-label">LEARNING & DEVELOPMENT</p>
+<h2 class="section-title">Certifications & Job Simulations</h2>
+
+<p class="section-description">
+    Professional job simulations and practical learning
+    experiences that strengthen my analytical and
+    technical capabilities.
+</p>
+
+<div class="certification-card">
+
+    <h3>Data Science Job Simulation</h3>
+
+    <p class="role">Boston Consulting Group (BCG) | Forage</p>
+
+    <p>
+        <strong>Completion Date:</strong> 14 November 2026
+    </p>
+
+    <p>
+        Completed a practical Data Science job simulation
+        focused on customer churn analysis for XYZ Analytics,
+        applying data analysis, machine learning and
+        business problem-solving techniques.
+    </p>
+
+    <p class="cert-heading">
+        Key Responsibilities & Achievements
+    </p>
+
+    <p>
+        ✦ Identified essential client data requirements
+        and developed a structured approach to investigating
+        customer churn.
+    </p>
+
+    <p>
+        ✦ Conducted data analysis using Python, Pandas
+        and NumPy, applying data visualization techniques
+        to identify and interpret trends.
+    </p>
+
+    <p>
+        ✦ Built and optimised a Random Forest model,
+        achieving 50% recall in predicting customer churn.
+    </p>
+
+    <p>
+        ✦ Prepared an executive summary presenting key
+        findings and actionable insights to support
+        business decision-making.
+    </p>
+
+    <div class="project-tools">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Data Analysis</span>
+        <span>Data Visualization</span>
+        <span>Random Forest</span>
+        <span>Machine Learning</span>
+        <span>Customer Churn Analysis</span>
+    </div>
+
+    <p class="credential">
+        <strong>Credential ID:</strong>
+        6af810e836af9db3ebfd6a9f
+    </p>
+
+    <a href="https://www.theforage.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_6af7e0014ccf1a1181ee90ff_1794646313796_completion_certificate.pdf"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn-primary">
+        View Certificate ↗
+    </a>
 
 </div>
 </div>
@@ -1031,8 +1234,13 @@ footer {
 </a>
 
 <div class="contact-links">
-    <a href="https://github.com/garimaworkspace" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/garimaworkspace"
+       target="_blank"
+       rel="noopener noreferrer">GitHub</a>
+
+    <a href="https://www.linkedin.com/"
+       target="_blank"
+       rel="noopener noreferrer">LinkedIn</a>
 </div>
 
 </div>
